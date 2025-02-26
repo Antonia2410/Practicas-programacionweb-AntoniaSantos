@@ -8,20 +8,114 @@
     <title>Botones Bootstrap</title>
 </head>
 <body>
-<div class="conteiner">
+<div class="container">
     <div class="card">
         <h3>mi primer card</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, cum, cupiditate dignissimos fuga quidem, voluptatum dolorum temporibus mollitia fugit esse incidunt delectus asperiores adipisci eum deleniti dolor eos doloremque doloribus.</p>
     </div>
-    <button class="btn btn-primary">Primer Boton</button>
-    <button class="btn btn-danger">Segundo Boton</button>
-    <button class="btn btn-warning">Tercer Boton</button>
-    <button style="border-radius: 25px;" class="btn btn-info">Cuarto Boton</button>
+    <button class="btn btn-primary mb-2">Primer Boton</button>
+    <button class="btn btn-danger mb-2">Segundo Boton</button>
+    <button class="btn btn-warning mb-2">Tercer Boton</button>
+    <button style="border-radius: 25px;" class="btn btn-info mb-2">Cuarto Boton</button>
+</div>
+<!-- Variantes de Botones -->
+<div class="container mt-4">
+    <h4>Variantes</h4>
+    <!-- Botones de Variantes -->
+    <button type="button" class="btn btn-primary mb-2">Primary</button>
+    <button type="button" class="btn btn-secondary mb-2">Secondary</button>
+    <button type="button" class="btn btn-success mb-2">Success</button>
+    <button type="button" class="btn btn-danger mb-2">Danger</button>
+    <button type="button" class="btn btn-warning mb-2">Warning</button>
+    <button type="button" class="btn btn-info mb-2">Info</button>
+    <button type="button" class="btn btn-light mb-2">Light</button>
+    <button type="button" class="btn btn-dark mb-2">Dark</button>
+    <button type="button" class="btn btn-link mb-2">Link</button>
+    <h4>Button tags</h4>
+    <!-- Etiquetas de Botón -->
+    <a class="btn btn-primary mb-2" href="#" role="button">Link</a>
+    <button class="btn btn-primary mb-2" type="submit">Button</button>
+    <input class="btn btn-primary mb-2" type="button" value="Input">
+    <input class="btn btn-primary mb-2" type="submit" value="Submit">
+    <input class="btn btn-primary mb-2" type="reset" value="Reset">
+    <a class="btn btn-primary mb-2 disabled" role="button" aria-disabled="true">Primary link</a>
+    <a class="btn btn-secondary mb-2 disabled" role="button" aria-disabled="true">Link</a>
+    <h4>Contorno</h4>
+    <!-- Botones de Contorno -->
+    <button type="button" class="btn btn-outline-primary mb-2">Primary</button>
+    <button type="button" class="btn btn-outline-secondary mb-2">Secondary</button>
+    <button type="button" class="btn btn-outline-success mb-2">Success</button>
+    <button type="button" class="btn btn-outline-danger mb-2">Danger</button>
+    <button type="button" class="btn btn-outline-warning mb-2">Warning</button>
+    <button type="button" class="btn btn-outline-info mb-2">Info</button>
+    <button type="button" class="btn btn-outline-light mb-2">Light</button>
+    <button type="button" class="btn btn-outline-dark mb-2">Dark</button>
+    <h4>Size</h4>
+    <!-- Tamaños de Botón -->
+    <button type="button" class="btn btn-primary btn-lg mb-2">Large button</button>
+    <button type="button" class="btn btn-secondary btn-lg mb-2">Large button</button>
+    <button type="button" class="btn btn-primary btn-sm mb-2">Small button</button>
+    <button type="button" class="btn btn-secondary btn-sm mb-2">Small button</button>
+    <button type="button" class="btn btn-primary mb-2" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Custom button</button>
+    <h4>Disabled state</h4>
+    <!-- Estado Deshabilitado -->
+    <button type="button" class="btn btn-primary mb-2" disabled>Primary button</button>
+    <button type="button" class="btn btn-secondary mb-2" disabled>Button</button>
+    <button type="button" class="btn btn-outline-primary mb-2" disabled>Primary button</button>
+    <button type="button" class="btn btn-outline-secondary mb-2" disabled>Button</button>
 </div>
 
-    
+<!-- Botones de Bloque -->
+<div class="container mt-4">
+    <h4>Block buttons</h4>
+    <!-- Bloque de Botones -->
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary mb-2" type="button">Button</button>
+        <button class="btn btn-primary mb-2" type="button">Button</button>
+    </div>
+
+    <!-- Botones Responsivos -->
+    <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary mb-2" type="button">Button</button>
+        <button class="btn btn-primary mb-2" type="button">Button</button>
+    </div>
+
+    <!-- Botones de Bloque con Ancho Ajustado -->
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary mb-2" type="button">Button</button>
+        <button class="btn btn-primary mb-2" type="button">Button</button>
+    </div>
+
+    <!-- Alineación de Botones -->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary mb-2 me-md-2" type="button">Button</button>
+        <button class="btn btn-primary mb-2" type="button">Button</button>
+    </div>
+    <h4>Toggle states</h4>
+    <p class="d-inline-flex gap-1">
+        <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
+        <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+        <button type="button" class="btn" disabled data-bs-toggle="button">Disabled toggle button</button>
+      </p>
+      <p class="d-inline-flex gap-1">
+        <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+        <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+        <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
+      </p>
+
+      <p class="d-inline-flex gap-1">
+        <a href="#" class="btn" role="button" data-bs-toggle="button">Toggle link</a>
+        <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+        <a class="btn disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+      </p>
+      <p class="d-inline-flex gap-1">
+        <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
+        <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+        <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+      </p>
+</div>
 
 <!-- Script Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
